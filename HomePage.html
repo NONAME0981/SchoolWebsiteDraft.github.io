@@ -1,108 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
-    <link rel="icon" type="image/png" href="https://noname0981.github.io/SchoolWebsiteDraft.github.io/minilogo.png">
-    <style>
-        
-        a:link {
-        color: black;
-        background-color: transparent;
-        text-decoration: none;
-        }
-        
-        a:visited {
-        color: black;
-        background-color: transparent;
-        text-decoration: none;
-        }
-        
-        a:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-        }
-        
-        a:active {
-        color: black;
-        background-color: transparent;
-        text-decoration: underline;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: darkblue;
-            color: black;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link rel="icon" type="image/png" href="https://noname0981.github.io/SchoolWebsiteDraft.github.io/minilogo.png">
+  <style>
+    a:link, a:visited {
+      color: black;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover, a:active {
+      color: red;
+      text-decoration: underline;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: darkblue;
+      color: black;
+    }
 
-        header {
-            background-color: white;
-            color: black;
-            padding: 20px 0;
-            text-align: center;
-        }
+    header {
+      background-color: white;
+      color: black;
+      padding: 20px 0;
+      text-align: center;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+    nav button {
+      color: white;
+      background-color: darkblue;
+      border: none;
+      margin: 0 15px;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 6px;
+    }
 
-        section {
-        padding: 40px 20px;
-        max-width: 800px;
-        margin: 30px auto 30px auto;
-        background: lightblue;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    nav button:hover {
+      background-color: red;
+    }
 
-        }
-        
-        footer {
-            background-color: white;
-            color: black;
-            padding: 20px 0;
-            text-align: center;
-        }
-    </style>
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 30px auto;
+      background: lightblue;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: white;
+      color: black;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer button {
+      background-color: darkblue;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer button:hover {
+      background-color: red;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <a href="https://noname0981.github.io/SchoolWebsiteDraft.github.io/HomePage.html"><img src="https://noname0981.github.io/SchoolWebsiteDraft.github.io/logo.png" alt="TechTopia-Logo" style="width:128;height:64;"></a>
-    <h1>Business support services</h1>
-    <nav>
-      <a href="https://noname0981.github.io/SchoolWebsiteDraft.github.io/Services.html">Services</a>
-      <a href="https://noname0981.github.io/SchoolWebsiteDraft.github.io/Contact.html">Contact Us</a>
-    </nav>
+  <!-- Logo with JavaScript click -->
+  <img id="logo" src="https://noname0981.github.io/SchoolWebsiteDraft.github.io/logo.png" alt="TechTopia-Logo" style="width:128px; height:64px; cursor:pointer;">
+  <h1>Business support services</h1>
+  <nav>
+    <button id="servicesBtn">Services</button>
+    <button id="contactBtn">Contact Us</button>
+  </nav>
 </header>
 
-    <section id="about">
-        <h2>About us</h2>
-      <p>We offer Specialist Consulting and Professional IT Support for businesses throughout the Gympie Region and surrounding areas, Including Bundaberg and the Sunshine Coast. We ensure that our solutions are best suited with your business and the way you operate, an understanding is built through the investment of time and development of trust.</p>
-      
-      <p>Whether you need to secure your business, want to mitigate risks, leveraging cloud services, integration of onsite and cloud based platforms, supply and install of reliable business and enterprise class hardware, TechTopia has the experience and skill set to help your business.</p>
-    </section>
-    <section id="services">
-        <h2>A few of our services</h2>
-        <ul>
-            <li>Installation of business level hardware</li>
-            <li>Onsite and Remote support</li>
-            <li>Managed Cyber Security</li>
-        </ul>
-        <a href="https://noname0981.github.io/SchoolWebsiteDraft.github.io/Services.html">More services...</a>
-    </section>
-        
-    <footer>
-        <a href="https://noname0981.github.io/SchoolWebsiteDraft.github.io/Contact.html">Contact Us</a>
-    </footer>
+<section id="about">
+  <h2>About us</h2>
+  <p>We offer Specialist Consulting and Professional IT Support for businesses throughout the Gympie Region and surrounding areas, Including Bundaberg and the Sunshine Coast. We ensure that our solutions are best suited with your business and the way you operate, an understanding is built through the investment of time and development of trust.</p>
+  
+  <p>Whether you need to secure your business, want to mitigate risks, leveraging cloud services, integration of onsite and cloud based platforms, supply and install of reliable business and enterprise class hardware, TechTopia has the experience and skill set to help your business.</p>
+</section>
+
+<section id="services">
+  <h2>A few of our services</h2>
+  <ul>
+    <li>Installation of business level hardware</li>
+    <li>Onsite and Remote support</li>
+    <li>Managed Cyber Security</li>
+  </ul>
+  <button id="moreServicesBtn">More services...</button>
+</section>
+
+<footer>
+  <button id="footerContactBtn">Contact Us</button>
+</footer>
+
+<!-- JavaScript Section -->
+<script>
+  // Wait for the page to load
+  document.addEventListener("DOMContentLoaded", function() {
+
+    // Logo click → homepage
+    document.getElementById("logo").addEventListener("click", function() {
+      window.location.href = "https://noname0981.github.io/SchoolWebsiteDraft.github.io/HomePage.html";
+    });
+
+    // Navigation buttons
+    document.getElementById("servicesBtn").addEventListener("click", function() {
+      window.location.href = "https://noname0981.github.io/SchoolWebsiteDraft.github.io/Services.html";
+    });
+
+    document.getElementById("contactBtn").addEventListener("click", function() {
+      window.location.href = "https://noname0981.github.io/SchoolWebsiteDraft.github.io/Contact.html";
+    });
+
+    // Section + footer buttons
+    document.getElementById("moreServicesBtn").addEventListener("click", function() {
+      window.location.href = "https://noname0981.github.io/SchoolWebsiteDraft.github.io/Services.html";
+    });
+
+    document.getElementById("footerContactBtn").addEventListener("click", function() {
+      window.location.href = "https://noname0981.github.io/SchoolWebsiteDraft.github.io/Contact.html";
+    });
+
+  });
+</script>
 
 </body>
 </html>
-
